@@ -1,0 +1,35 @@
+#m{
+    margin-left: 30px;
+    font-size: small;
+    
+}
+#m1,#m2{
+    margin-left: 10px;
+    font-size: small;
+}
+
+
+.para1{
+    margin-bottom: 2px;
+    margin-left: 3px;
+}
+#login{
+    margin-right:0px ;
+    margin-left: 2px;
+}
+#cartimage{
+    height: 20px;
+    width: 20px;
+    margin-top: 12px;
+}
+#heartimage{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+    margin-left: 12px;
+    margin-top: 12px;
+}
+.d-flex{
+    width: 350px;
+    margin-left: 200px;
+}
