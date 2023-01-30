@@ -1,23 +1,24 @@
-import React, { useEffect, useState } from "react";
-import mImage from './MensTshirtImage.jpg';
-import wImage from './WomenTshirtImage.webp';
+import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useEffect } from "react";
+import wImage from './WomenTshirtImage.webp';
 
-const Product=()=>{
-    const[alluser,setAlluser]=useState([]);
-
+const Women=()=>{
     const handleAddToCart=()=>{
-        console.log("Add to cart clicked");
+
     }
 
+    const [alluser,setAlluser]= useState([]);
+
     useEffect(()=>{
-        fetch("http://localhost:8080/getAllProducts")
+        fetch("http://localhost:8080/getProductByName/Women's T-shirt")
         .then(res=>res.json())
         .then((result)=>{
             setAlluser(result);
         })
     },[]);
-   
+
     return(
         <>
         <div className="row mx-5">
@@ -26,7 +27,7 @@ const Product=()=>{
               <div className="col-md-4" key={alluser.id}>
               <div className="card my-4" >
                 
-                    <img src={alluser.name==="Women's T-Shirt"?mImage:wImage} className="card-img-top" alt="Nothing to display!!!"/>
+                    <img src={wImage} className="card-img-top" alt="Nothing to display!!!"/>
                 <div className="card-body">
                     <h5 className="card-title">{alluser.name}</h5>
                     <p className="card-text">{alluser.price}.00Rs</p>
@@ -43,8 +44,11 @@ const Product=()=>{
         }
         </div>
 
-       </>   
+       </>  
+        
+         
+        
     );
 }
 
-export default Product;
+export default Women;

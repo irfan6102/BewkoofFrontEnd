@@ -1,27 +1,28 @@
 import React from "react";
 import './NavbarTypes.css';
+import { Link } from "react-router-dom";
 
 const NavbarTypes=()=>{
     return(
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">LIVE NOW!</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid">
+    <Link className="navbar-brand" to="/livenow">LIVE NOW!</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a id="v1" class="nav-link active" aria-current="page" href="#">MEN</a>
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <Link id="v1" className="nav-link active" aria-current="page" to="/men">MEN</Link>
         </li>
-        <li class="nav-item">
-          <a id="v2" class="nav-link active" href="#">WOMEN</a>
+        <li className="nav-item">
+          <Link id="v2" className="nav-link active" to="/women">WOMEN</Link>
         </li>
-        <li class="nav-item">
-          <a id="v3" class="nav-link active" href="#">ACCESSORIES</a>
+        <li className="nav-item">
+          <Link id="v3" className="nav-link active" to="/accessories">ACCESSORIES</Link>
         </li>
-        <li class="nav-item">
-          <a id="v4" class="nav-link active" href="#">WINTERWEAR</a>
+        <li className="nav-item">
+          <Link id="v4" className="nav-link active" to="/winterwear">WINTERWEAR</Link>
         </li>
        </ul>
         
