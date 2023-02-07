@@ -1,11 +1,18 @@
-import React from "react";
 import './Navbar.css';
 import image1 from './CartImage.webp';
 import image2 from './heartImage.png';
 import { Link } from "react-router-dom";
 
 
+
 const Navbar=()=>{
+
+
+  
+
+
+   
+
      return(
         <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom border-2">
   <div className="container-fluid">
@@ -26,10 +33,7 @@ const Navbar=()=>{
         </li>
        
         </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search by product,category or collection " aria-label="Search" />
-      </form>
-      <p className="para1">|</p>
+    
       
       
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">

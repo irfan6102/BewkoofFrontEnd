@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import mImage from './MensTshirtImage.jpg';
 import wImage from './WomenTshirtImage.webp';
 import { Link } from "react-router-dom";
+import Search from "./Search";
 
 const Product=()=>{
     const[alluser,setAlluser]=useState([]);
@@ -20,6 +21,7 @@ const Product=()=>{
    
     return(
         <>
+        <Search />
         <div className="row mx-5">
            {alluser.map((alluser)=>(
          
